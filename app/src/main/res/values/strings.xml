@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">android_BroadcastReceiver</string>
+    <string name="onClick">android_BroadcastReceiver</string>
+</resources>

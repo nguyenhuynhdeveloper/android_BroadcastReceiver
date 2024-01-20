@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android_broadcastreceiver.BroadcastReceiver_wifi.MainActivity">
+
+    <!--    //xmlns:android="http://schemas.android.com/apk/res/android" : cần cái này để sử dụng các thuộc tính mà android cũng cấp-->
+    <!--//   android:layout_width="match_parent" : là toàn bộ màn hình-->
+    <!--    //android:layout_width="wrap_content" : Chỉ bao quanh lấy những cái nó chứa-->
+    <!--    //android:layout_width="500dp" : fix cứng chiều rộng của 1 View-->
+    <!--    //Không nên fix cứng mà cần viết các thông số ở phần values : như màu sắc, string, style ,-->
+    <!--//android:orientation="horizontal" : hướng của ViewGroup-->
+    <TextView
+
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/purple_200"
+        android:text="@string/onClick"
+        android:textSize="20dp" />
+    <!--    // Mỗi 1 View hay 1 ViewGroup để có thể điều khiển logic ở bên MainActivity.java thì cần có 1 id-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="49dp"
+        >
+
+        <Button
+            android:id="@+id/btn_send_broadcast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/purple_200"
+            android:textColor="@color/white"
+            android:text="SEND BROADCAST" />
+
+        <TextView
+            android:id="@+id/tv_received"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text= "Nhận sự kiện "/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
